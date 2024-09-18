@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment13.css">
+</head>
+
+<body>
+    <button class="button"><a href="/index.html">Back to list</a></button>
+     <!-- Question 1 -->
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button class="btn" type="submit">Submit</button>
+
+    </form>
+
+    <div id="formData"></div> 
+
+    <!-- Question 2  -->
+    <h2>Item Details</h2>
+    <div class="content">
+        <p>Artificial intelligence (AI) is the development of computer systems that can perform tasks that typically
+            require human intelligence,such as learning, reasoning, problem-solving, and decision-making. AI is rapidly transforming various
+            industries, including healthcare, finance, and transportation. While AI offers significant advancements, it
+            also raises ethical, privacy, and employment concerns.Sources and related content
+        </p>
+        <p>More text here...</p>
+    </div>
+
+    <button class="read-more-button">Read More</button>
+
+
+	<!-- Question # 3 -->
+	<h1>Student Details</h1>
+
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required><br><br>
+
+        <button type="submit" id="addBtn">Add Student</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <form id="editForm" style="display: none;">
+        <h3>Edit Student Details</h3>
+        <input type="hidden" id="editIndex">
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" required><br><br>
+
+        <label for="editAge">Age:</label>
+        <input type="number" id="editAge" required><br><br>
+
+        <label for="editGrade">Grade:</label>
+        <input type="text" id="editGrade" required><br><br>
+
+        <button type="submit">Update Student</button>
+        <button type="button" id="cancelEditBtn">Cancel</button>
+    </form>
+
+   
+     <script src="Assignment13.js"></script>
+</body>
+
+</html>
